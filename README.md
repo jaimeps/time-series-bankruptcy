@@ -35,7 +35,7 @@ After careful consideration of the ACF and PACF plots, we fitted a SARIMA model.
 	<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/acf_pacf.png" width="600"> 
 </p>
 
-Additionally, we contrasted our preliminary conclusions with an overfitting method. Multiple models were explored and the values of the log-likelihood, σ2, RMSE on the validation set as well as RMSE on the complete set were compared.
+Additionally, we contrasted our preliminary conclusions with an overfitting method. Multiple models were explored and the values of the log-likelihood, σ<sup>2</sup>, RMSE on the validation set as well as RMSE on the complete set were compared.
 
 ### Selected model:
 Our final model is a **SARIMA (2, 1, 0) x (1, 0, 2)<sub>[12]</sub>**
