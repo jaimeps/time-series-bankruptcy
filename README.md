@@ -15,19 +15,19 @@ The dataset consists of 4 series of monthly data from January 1987 to December 2
 - Population
 - Unemployment rate
 - House Price Index
-<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/series_original.png"> <br />
+<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/original_series.png" width = 600> <br />
 
 ### Exploratory Data Analysis:
 
 After analyzing the stationarity, seasonality, order, mean, covariates and heteroscedasticity, we found appropriate to use one ordinary difference and log transform the series.
-<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/log_transformed.png" width="600"> <br />
+<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/log_transformed.png" width="600" align="center"> <br />
 
 ### Model building process:
 We used a two step process, where data for 2010 is used for parameter estimation:
-<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/table.png" width="800"> <br />
+<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/table.png" width="600"> <br />
 
 After careful consideration of the ACF and PACF plots, we fitted a SARIMA model. 
-<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/acf_pacf.png" width="600"> <br />
+<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/acf_pacf.png" width="600" align="center"> <br />
 
 Additionally, we contrasted our preliminary conclusions with an overfitting method. Multiple models were explored and the values of the log-likelihood, σ2, RMSE on the validation set as well as RMSE on the complete set were compared.
 
@@ -39,7 +39,7 @@ Through both visual inspection and appropriate tests, we analyzed the assumption
 
 ### Forecast:
 We used the model to forecast the bankruptcy rates for January 2011 to December 2011.
-<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/forecast.png" width="800"> <br />
+<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/forecast.png" width="600"> <br />
 
 ### References
 - Peter Brockwell; Richard Davis - *Introduction to Time Series and Forecasting*
