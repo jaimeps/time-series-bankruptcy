@@ -1,7 +1,7 @@
 
 ## Time Series - Canadian national bankruptcy rate 
 
-Authors: [Chhavi Choudhury](https://github.com/chhavi21), [Jaime Pastor](https://github.com/jaimeps), [Abhishek Singh](https://github.com/Abhishek19895)
+Authors: [Chhavi Choudhury](https://github.com/chhavi21), [Jaime Pastor](https://github.com/jaimeps), [Abhishek Singh](https://github.com/Abhishek19895) <br />
 *(Report available upon request)*
 
 ### Description
@@ -15,19 +15,19 @@ The dataset consists of 4 series of monthly data from January 1987 to December 2
 - Population
 - Unemployment rate
 - House Price Index
-<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/series_original.png" width="800"> <br />
+<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/series_original.png"> <br />
 
 ### Exploratory Data Analysis:
 
 After analyzing the stationarity, seasonality, order, mean, covariates and heteroscedasticity, we found appropriate to use one ordinary difference and log transform the series.
-<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/log_transformed.png" width="800"> <br />
+<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/log_transformed.png" width="600"> <br />
 
 ### Model building process:
 We used a two step process, where data for 2010 is used for parameter estimation:
 <img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/table.png" width="800"> <br />
 
 After careful consideration of the ACF and PACF plots, we fitted a SARIMA model. 
-<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/acf_pacf.png" width="800"> <br />
+<img src="https://github.com/jaimeps/time-series-bankruptcy/blob/master/images/acf_pacf.png" width="600"> <br />
 
 Additionally, we contrasted our preliminary conclusions with an overfitting method. Multiple models were explored and the values of the log-likelihood, σ2, RMSE on the validation set as well as RMSE on the complete set were compared.
 
